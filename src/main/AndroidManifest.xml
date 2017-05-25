@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.zucc.cql.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/best_buy"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/best_buy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Fragment3" />
+        <activity android:name=".EditActivity" />
+        <activity
+            android:name=".NoteActivity"
+            android:label="@string/title_activity_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".anime.AnimeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".EditNoteActivity"
+            android:theme="@style/Theme.Transparent"></activity>
+        <activity android:name=".HelpActivity"></activity>
+    </application>
+
+</manifest>
